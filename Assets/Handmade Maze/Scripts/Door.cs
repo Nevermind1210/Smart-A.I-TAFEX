@@ -18,7 +18,7 @@ namespace Door
         //the width of the door
         [SerializeField] private float doorWidth = 10;
         [SerializeField] private float doorMoveSpeed = 3;
-        private float DoorYpos => doorPart.transform.localPosition.y;
+        private float doorYpos => doorPart.transform.localPosition.y;
 
         private MeshRenderer leftDoorFrameMeshRenderer;
         private MeshRenderer rightDoorFrameMeshRenderer;
@@ -62,26 +62,26 @@ namespace Door
         
         private void Start()
         {
-            closedDoorHeight = DoorYpos;
+            closedDoorHeight = doorYpos;
             leftDoorFrameMeshRenderer = leftDoorFrame.GetComponent<MeshRenderer>();
             rightDoorFrameMeshRenderer = rightDoorFrame.GetComponent<MeshRenderer>();
-            SetColor(Color.red);
+            SetColor(new Color(0.89f, 0.56f, 1f));
         }
 
         void Update()
         {
             //if the door's height is below its target, move it up until it isn't; vice versa for if it is above it's target.
-            if (DoorYpos < TargetHeight)
+            if (doorYpos < TargetHeight)
             {
                 doorPart.transform.localPosition += Vector3.up * (Time.deltaTime * doorMoveSpeed);
-                if (DoorYpos > TargetHeight)
+                if (doorYpos > TargetHeight)
                     SetDoorHeight(TargetHeight);
                 
             }
-            else if (DoorYpos > TargetHeight)
+            else if (doorYpos > TargetHeight)
             {
                 doorPart.transform.localPosition -= Vector3.up * (Time.deltaTime * doorMoveSpeed);
-                if (DoorYpos < TargetHeight)
+                if (doorYpos < TargetHeight)
                     SetDoorHeight(TargetHeight);
             }
         }
