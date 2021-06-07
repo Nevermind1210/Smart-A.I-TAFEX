@@ -13,7 +13,7 @@ NavMeshProjectSettings:
     cost: 3
   - name: Water
     cost: 0
-  - name: 
+  - name: Lock
     cost: 1
   - name: 
     cost: 1

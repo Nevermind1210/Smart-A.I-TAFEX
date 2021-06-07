@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="" />
+    <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,12 +20,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FeildOfViewEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameVariables.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Collectible.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Door.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FeildOfViewEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameVariables.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Collectible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tPqg863qVjEXpGogbBxWx9Lyjl" />
@@ -27,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -39,6 +53,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/A.I Pathfinding\A.I Maze Pathfinding.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\xavie\Desktop\A.I Pathfinding" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -69,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622681185165</updated>
       <workItem from="1622681195385" duration="3467000" />
+      <workItem from="1622956959323" duration="7778000" />
     </task>
     <servers />
   </component>
@@ -77,6 +100,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
