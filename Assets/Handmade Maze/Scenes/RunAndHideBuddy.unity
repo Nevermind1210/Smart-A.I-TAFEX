@@ -1988,6 +1988,7 @@ GameObject:
   - component: {fileID: 566293351}
   - component: {fileID: 566293353}
   - component: {fileID: 566293354}
+  - component: {fileID: 566293355}
   m_Layer: 0
   m_Name: Zombie3
   m_TagString: Untagged
@@ -2095,6 +2096,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.91, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &566293355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566293349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4fc27548a36fc40b775775508c7b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mRaycastRadius: 1
+  mTargetDetectionDistance: 150
 --- !u!1 &569640704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,6 +6086,7 @@ GameObject:
   - component: {fileID: 1417069287}
   - component: {fileID: 1417069289}
   - component: {fileID: 1417069290}
+  - component: {fileID: 1417069291}
   m_Layer: 0
   m_Name: Zombie2
   m_TagString: Untagged
@@ -6178,6 +6194,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.91, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1417069291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417069285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4fc27548a36fc40b775775508c7b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mRaycastRadius: 1
+  mTargetDetectionDistance: 150
 --- !u!1001 &1421976830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9728,6 +9758,7 @@ GameObject:
   - component: {fileID: 2111757703}
   - component: {fileID: 2111757702}
   - component: {fileID: 2111757705}
+  - component: {fileID: 2111757706}
   m_Layer: 0
   m_Name: Zombie4
   m_TagString: Untagged
@@ -9742,8 +9773,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111757700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -200.07947, y: 73.762, z: 19.4333}
+  m_LocalRotation: {x: -0, y: -0.9956557, z: -0, w: 0.09311164}
+  m_LocalPosition: {x: -121.869, y: 73.643, z: -66.223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1207577927}
@@ -9763,7 +9794,7 @@ Transform:
   - {fileID: 946290642}
   m_Father: {fileID: 923863950}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -169.315, z: 0}
 --- !u!114 &2111757702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9835,6 +9866,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.91, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &2111757706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111757700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4fc27548a36fc40b775775508c7b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mRaycastRadius: 1
+  mTargetDetectionDistance: 150
 --- !u!1 &2121886930
 GameObject:
   m_ObjectHideFlags: 0
@@ -14813,6 +14858,7 @@ GameObject:
   - component: {fileID: 5416092610712063273}
   - component: {fileID: 5416092610712063274}
   - component: {fileID: 5416092610712063275}
+  - component: {fileID: 5416092610712063276}
   m_Layer: 0
   m_Name: Zombie1
   m_TagString: Untagged
@@ -14872,6 +14918,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.91, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &5416092610712063276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5416092610712063272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4fc27548a36fc40b775775508c7b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mRaycastRadius: 1
+  mTargetDetectionDistance: 150
 --- !u!1 &5484463210709175050
 GameObject:
   m_ObjectHideFlags: 0

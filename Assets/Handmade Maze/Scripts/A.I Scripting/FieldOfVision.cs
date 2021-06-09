@@ -4,16 +4,53 @@ using UnityEngine;
 
 public class FieldOfVision : MonoBehaviour
 {
-   public float viewRadius;
-   [Range(0,360)]
-   public float viewAngle;
+    public float mRaycastRadius;
+    public float mTargetDetectionDistance;
 
-   public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
-   {
-      if (!angleIsGlobal)
-      {
-         angleInDegrees += transform.eulerAngles.y;
-      }
-      return new Vector3(Mathf.Sin(angleInDegrees = Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees = Mathf.Deg2Rad));
-   }
+    private RaycastHit hitinfo;
+
+    private bool hasDetectedHero = false;
+
+    private void Update()
+    {
+        CheckForTargetLineOfSight(); 
+    }
+
+    public void CheckForTargetLineOfSight()
+    {
+        hasDetectedHero = Physics.SphereCast(transform.position, mRaycastRadius, transform.forward, out hitinfo, mTargetDetectionDistance);
+
+        if(hasDetectedHero)
+        {
+            if(hitinfo.transform.CompareTag("Hero"))
+            {
+                Debug.Log("Detected Hero");
+                // Logic that makes the threat start RUNNING and attacking when the Hero is in a certain range.
+            }
+            else
+            {
+                Debug.Log("No Hero here moving on....");
+               // add logic that stops chasing and resume back a state.
+            }
+        }
+        else
+        {
+            //todo more logic
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(hasDetectedHero)
+        {
+            Gizmos.color = Color.red;
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+        }
+        Gizmos.matrix = transform.localToWorldMatrix;
+
+        Gizmos.DrawCube(new Vector3(0f, 0f, mTargetDetectionDistance / 2), new Vector3(mRaycastRadius, mRaycastRadius, mTargetDetectionDistance));
+    }
 }
