@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
     </list>
@@ -19,18 +24,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FeildOfViewEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameVariables.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Collectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Door.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FeildOfViewEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameVariables.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Collectible.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
+      <option value="$PROJECT_DIR$/Assets/OpenSeasme.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Door.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" />
+      <option value="$PROJECT_DIR$/Assets/TheEnd.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/Collectible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tPqg863qVjEXpGogbBxWx9Lyjl" />
@@ -41,6 +51,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -49,10 +61,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Desktop/A.I Pathfinding\A.I Maze Pathfinding.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -92,6 +104,8 @@
       <updated>1622681185165</updated>
       <workItem from="1622681195385" duration="3467000" />
       <workItem from="1622956959323" duration="7778000" />
+      <workItem from="1623324144397" duration="8454000" />
+      <workItem from="1623464090650" duration="2485000" />
     </task>
     <servers />
   </component>
@@ -110,6 +124,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

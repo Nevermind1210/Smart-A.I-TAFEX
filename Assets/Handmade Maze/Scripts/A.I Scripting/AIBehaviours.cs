@@ -29,7 +29,7 @@ namespace AI
             ReturnToWander();
         }
 
-        public void ChasingHero()
+        public void ChasingHero() 
         {
             wandering.enabled = false;
             agent.speed = 5f;

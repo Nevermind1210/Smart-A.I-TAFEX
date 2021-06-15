@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using AI;
 using UnityEngine;
 
 public class FieldOfVision : MonoBehaviour
 {
+    public AIBehaviours state;
     public float mRaycastRadius;
     public float mTargetDetectionDistance;
 
@@ -26,16 +28,14 @@ public class FieldOfVision : MonoBehaviour
             {
                 Debug.Log("Detected Hero");
                 // Logic that makes the threat start RUNNING and attacking when the Hero is in a certain range.
+                state.ChasingHero();
             }
             else
             {
                 Debug.Log("No Hero here moving on....");
                // add logic that stops chasing and resume back a state.
+               state.ReturnToWander();
             }
-        }
-        else
-        {
-            //todo more logic
         }
     }
 
@@ -49,6 +49,7 @@ public class FieldOfVision : MonoBehaviour
         {
             Gizmos.color = Color.green;
         }
+        
         Gizmos.matrix = transform.localToWorldMatrix;
 
         Gizmos.DrawCube(new Vector3(0f, 0f, mTargetDetectionDistance / 2), new Vector3(mRaycastRadius, mRaycastRadius, mTargetDetectionDistance));
