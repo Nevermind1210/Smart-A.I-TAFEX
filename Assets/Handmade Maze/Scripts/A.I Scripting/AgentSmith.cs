@@ -73,5 +73,13 @@ namespace AI
                 Gizmos.DrawWireSphere(agent.steeringTarget, 1f);
             }
         }
+        
+        private void OnTriggerEnter(Collider collided)
+        {
+            if (collided.gameObject.tag == "Hero")
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

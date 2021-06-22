@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze 1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze 1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy/NavMesh-Maze.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,12 +51,17 @@
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
       <option value="$PROJECT_DIR$/Assets/OpenSeasme.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Door.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" />
       <option value="$PROJECT_DIR$/Assets/TheEnd.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/Collectible.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveDoneQuestionMarkl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tPqg863qVjEXpGogbBxWx9Lyjl" />
@@ -106,6 +127,10 @@
       <workItem from="1622956959323" duration="7778000" />
       <workItem from="1623324144397" duration="8454000" />
       <workItem from="1623464090650" duration="2485000" />
+      <workItem from="1624078778832" duration="6403000" />
+      <workItem from="1624144710102" duration="3782000" />
+      <workItem from="1624318879645" duration="3428000" />
+      <workItem from="1624391497874" duration="2111000" />
     </task>
     <servers />
   </component>

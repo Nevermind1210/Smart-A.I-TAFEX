@@ -8,7 +8,7 @@ namespace Door
 {
     public class OpenSeasme : MonoBehaviour
     {
-        private Door door;
+        [SerializeField] Door door;
         private void OnTriggerEnter(Collider collider)
         {
             if (collider.gameObject.tag == "Hero" && GameVariables.keyItems > 0)

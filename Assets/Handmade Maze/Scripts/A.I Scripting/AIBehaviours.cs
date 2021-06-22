@@ -1,45 +1,69 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using System.Collections;
+using UnityEditor.VersionControl;
 
-namespace AI
+public interface IState
 {
-    public class AIBehaviours : MonoBehaviour
+    public void Enter();
+    public void Execute();
+    public void Exit();
+}
+
+public class AIBehaviours
+{
+    private IState currentState;
+
+    public void ChangeState(IState newState)
     {
-        public Transform hero;
-        public Transform myTransform;
-    
-        public Wandering wandering;
-        private Animator anim;
-        private Rigidbody rb;
-        private NavMeshAgent agent;
+        if (currentState != null)
+            currentState.Exit();
 
-        private void Start()
-        {
-            anim = GetComponent<Animator>();
-            rb = GetComponent<Rigidbody>();
-            agent = GetComponent<NavMeshAgent>();
-        }
+        currentState = newState;
+        currentState.Enter();
+    }
 
-        public void Update()
-        {
-            ChasingHero();
-            ReturnToWander();
-        }
-
-        public void ChasingHero() 
-        {
-            wandering.enabled = false;
-            agent.speed = 5f;
-            transform.LookAt(hero);
-            transform.Translate(Vector3.forward * 5 * Time.deltaTime);
-        }
-
-        public void ReturnToWander()
-        {
-            wandering.enabled = true;
-        }
+    public void Update()
+    {
+        if (currentState != null) currentState.Execute();
     }
 }
+
+
+public class Unit : MonoBehaviour
+{
+    AIBehaviours stateBehaviours = new AIBehaviours();
+
+    void Start()
+    {
+        stateBehaviours.ChangeState(new TestState(this));
+    }
+
+    private void Update()
+    {
+        stateBehaviours.Update();
+    }
+}
+
+public class TestState : IState
+{
+    Unit owner;
+ 
+    public TestState(Unit owner) { this.owner = owner; }
+ 
+    public void Enter()
+    {
+        Debug.Log("entering test state");
+    }
+ 
+    public void Execute()
+    {
+        Debug.Log("updating test state");
+    }
+ 
+    public void Exit()
+    {
+        Debug.Log("exiting test state");
+    }
+}
+

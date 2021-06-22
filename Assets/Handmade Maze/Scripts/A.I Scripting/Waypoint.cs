@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace AI
 {
     public class Waypoint : MonoBehaviour
     {
+        private GameObject Hero;
         public Vector3 Position => transform.position; // LAMBDAS r cool
 
         //Simply a way to find any object marked as a waypoint
