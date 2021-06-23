@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
@@ -5,10 +6,11 @@ using Random = UnityEngine.Random;
 
 namespace AI
 {
-   public class Wandering : MonoBehaviour
+   [System.Serializable]
+   public class Wandering
    {
-      public float wanderRadius;
-      public float wanderTimer;
+      [SerializeField] float wanderRadius;
+      [SerializeField] float wanderTimer;
 
       private Transform target;
       private NavMeshAgent agent;
@@ -16,14 +18,15 @@ namespace AI
       private Animator _anim;
    
       // Initialization of the agent
-      private void OnEnable()
+      public void Start(GameObject _object)
       {
-         agent = GetComponent<NavMeshAgent>();
-         _anim = GetComponent<Animator>();
+         agent = _object.GetComponent<NavMeshAgent>();
+         _anim = _object.GetComponent<Animator>();
+         target = _object.transform;
          timer = wanderTimer;
       }
 
-      private void Update()
+      public void Update()
       {
          timer += Time.deltaTime;
 
@@ -31,7 +34,7 @@ namespace AI
          {
             if (!agent.pathPending && agent.remainingDistance < 0.1f)
             {
-               Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+               Vector3 newPos = RandomNavSphere(target.position, wanderRadius, -1);
                agent.SetDestination(newPos);
                timer = 0;
             }
