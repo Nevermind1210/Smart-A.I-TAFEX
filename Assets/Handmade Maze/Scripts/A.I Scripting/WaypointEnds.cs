@@ -6,7 +6,7 @@ namespace AI
 {
     public class WaypointEnds : MonoBehaviour
     {
-        
+        [SerializeField] Door.Door door;
         public Vector3 Position => transform.position; // LAMBDAS r cool
         
         //Simply a way to find any object marked as a waypoint
@@ -20,8 +20,9 @@ namespace AI
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Hero")
-            { 
-                other.GetComponent<AgentSmith>().RemoveWaypointEnd(this);
+            {
+                GameVariables.keyItems--;
+                door.open = true;
             }
         }
     }

@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/SmartHeroAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/SmartHeroAI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Animate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Animate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Avatar 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Avatar 1.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dependencies/Models/Key/Prefabs/key_gold.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/WaypointEnds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/WaypointEnds.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveEnablerDisabler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveEnablerDisabler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +37,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/d4/0caef474/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/f1/700e8b72/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/OpenSeasme.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/90/b8d99366/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -52,15 +54,18 @@
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveDoneQuestionMarkl.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/WaypointEnds.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveEnablerDisabler.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/WaypointKeys.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Animator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Animate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveEnablerDisabler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/WaypointEnds.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/SmartHeroAI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tPqg863qVjEXpGogbBxWx9Lyjl" />
@@ -71,7 +76,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34940413" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34955752" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -93,10 +98,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6300">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="25920">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="6300" />
+      <option name="pid" value="25920" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -133,6 +138,8 @@
       <workItem from="1624407308393" duration="19935000" />
       <workItem from="1624493133509" duration="10723000" />
       <workItem from="1624506644751" duration="10456000" />
+      <workItem from="1624528727266" duration="809000" />
+      <workItem from="1624529960316" duration="17618000" />
     </task>
     <servers />
   </component>
@@ -161,29 +168,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs</url>
-          <line>44</line>
-          <properties documentPath="C:\Users\xavier.arias1\Desktop\Smart-A.I-TAFEX\Assets\Handmade Maze\Scripts\A.I Scripting\AgentSmith.cs" initialLine="44" containingFunctionPresentation="method 'KeyWaypointsPath'">
-            <startOffsets>
-              <option value="1688" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1745" />
-            </endOffsets>
-          </properties>
+          <line>54</line>
+          <properties documentPath="C:\Users\xavier.arias1\Desktop\Smart-A.I-TAFEX\Assets\Handmade Maze\Scripts\A.I Scripting\AgentSmith.cs" initialLine="44" containingFunctionPresentation="method 'KeyWaypointsPath'" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\xavier.arias1\Desktop\Smart-A.I-TAFEX\Assets\Handmade Maze\Scripts\A.I Scripting\AgentSmith.cs" initialLine="19" containingFunctionPresentation="property 'endPoints'">
+          <line>24</line>
+          <properties documentPath="C:\Users\xavier.arias1\Desktop\Smart-A.I-TAFEX\Assets\Handmade Maze\Scripts\A.I Scripting\AgentSmith.cs" initialLine="19" containingFunctionPresentation="property 'endPoints'" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs</url>
+          <line>66</line>
+          <properties documentPath="F:\Unity Projects\Smart-A.I-TAFEX\Assets\Handmade Maze\Scripts\A.I Scripting\AIBehaviours.cs" initialLine="69" containingFunctionPresentation="method 'Collecting'">
             <startOffsets>
-              <option value="652" />
+              <option value="2071" />
             </startOffsets>
             <endOffsets>
-              <option value="701" />
+              <option value="2132" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -6,8 +6,7 @@ using Random = UnityEngine.Random;
 
 namespace AI
 {
-   [System.Serializable]
-   public class Wandering
+   public class Wandering : MonoBehaviour
    {
       [SerializeField] float wanderRadius;
       [SerializeField] float wanderTimer;
@@ -16,13 +15,13 @@ namespace AI
       private NavMeshAgent agent;
       private float timer;
       private Animator _anim;
-   
+
       // Initialization of the agent
-      public void Start(GameObject _object)
+      public void Start()
       {
-         agent = _object.GetComponent<NavMeshAgent>();
-         _anim = _object.GetComponent<Animator>();
-         target = _object.transform;
+         agent = GetComponent<NavMeshAgent>();
+         _anim = GetComponent<Animator>();
+         target = transform;
          timer = wanderTimer;
       }
 
@@ -38,6 +37,7 @@ namespace AI
                agent.SetDestination(newPos);
                timer = 0;
             }
+
             _anim.SetTrigger("Z_Walking");
          }
          else if (target == null)
@@ -48,7 +48,6 @@ namespace AI
 
       public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
       {
-         
          Vector3 randDirection = Random.insideUnitSphere * dist;
 
          randDirection += origin;

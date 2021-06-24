@@ -7,13 +7,5 @@ namespace Objectives
     {
         [SerializeField] public GameObject keyWaypointSet;
         [SerializeField] public GameObject endingWaypointSet;
-        private void Update()
-        {
-            if (GameVariables.keyItems == 4)
-            {
-                keyWaypointSet.SetActive(false);
-                endingWaypointSet.SetActive(true);
-            }
-        }
     }
 }

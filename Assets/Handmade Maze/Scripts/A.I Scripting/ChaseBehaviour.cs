@@ -22,7 +22,7 @@ namespace AI
             state = _object.GetComponent<AIBehaviours>();
         }
 
-        public void Update()
+        /*public void Update()
         {
             agent.speed = moveSpeed;
             itself.LookAt(Hero);
@@ -38,6 +38,6 @@ namespace AI
                     state.ChangeState(States.Wander);
                 }
             }
-        }
+        }*/
     }
 }

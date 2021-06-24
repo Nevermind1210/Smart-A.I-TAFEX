@@ -7,44 +7,33 @@ namespace Controller
 {
     public class GameManager : MonoBehaviour
     {
-        public bool endGame; 
-        private AgentSmith smitty;
+        public GameObject collectibleCount;
+        public bool endGame;
+        public bool speedGame;
+        [SerializeField] public float speedyBoi;
         private ObjectiveEnablerDisabler ObjectiveObject;
+        [SerializeField] private AIBehaviours stateBehaviours;
         private void Start()
         {
-            smitty = GetComponent<AgentSmith>();
             ObjectiveObject = GetComponent<ObjectiveEnablerDisabler>();
             if (endGame)
             {
-                GameVariables.keyItems = 4;
+                stateBehaviours.keyIndex = 4;
                 
-                for (int index = ObjectiveObject.keyWaypointSet.transform.childCount
-                    ;index >=0
-                    ;index--)
-                {
-                    Transform child = ObjectiveObject.keyWaypointSet.transform.GetChild(index);
-                    
-                    if(child == null) continue;
-
-                    WaypointKeys key = child.GetComponent<WaypointKeys>();
-
-                    if(key == null) continue;
-                    
-                    smitty.RemoveWaypoint(key);
-                }
-
-                // foreach (Transform child in ObjectiveObject.endingWaypointSet.transform)
-                // {
-                //     smitty.RemoveWaypoint(child);
-                //     ObjectiveObject.enabled = false;
-                // }
                 ObjectiveObject.endingWaypointSet.SetActive(true);
                 ObjectiveObject.keyWaypointSet.SetActive(false);
             }
+        }
+
+        private void Update()
+        {
+            if (speedGame)
+            {
+                Time.timeScale = speedyBoi;
+            }
             else
             {
-                ObjectiveObject.keyWaypointSet.SetActive(true);
-                ObjectiveObject.endingWaypointSet.SetActive(false);
+                Time.timeScale = 1f;
             }
         }
     }
