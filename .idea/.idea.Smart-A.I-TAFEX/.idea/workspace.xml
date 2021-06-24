@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Smart-A.I-TAFEX/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Zombie1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Prefabs/Zombie1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scenes/RunAndHideBuddy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/FieldOfVision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-    </list>
+    <list default="true" id="362e21a0-e5c8-424a-87a9-db3f98a5f181" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,17 +19,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F894FE8-B7FF-4AF7-979C-06AF04D3E5A5/b0/afa02cd9/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3DB63EF8-7226-4F8C-8164-C0CDE136F793/3c/cb7745d9/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/OpenSeasme.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -59,8 +35,6 @@
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/Collectible.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/UI Scripting/UIElements.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Editor/FieldOfVisionEditior.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/TheEnd.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveDoneQuestionMarkl.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/OpenSeasme.cs" />
@@ -68,6 +42,10 @@
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Wandering.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/ChaseBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AIBehaviours.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/Waypoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/A.I Scripting/AgentSmith.cs" />
+      <option value="$PROJECT_DIR$/Assets/Handmade Maze/Scripts/Objective Scripting/ObjectiveEnablerDisabler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tPqg863qVjEXpGogbBxWx9Lyjl" />
@@ -100,10 +78,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15684">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11404">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15684" />
+      <option name="pid" value="11404" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -138,6 +116,7 @@
       <workItem from="1624318879645" duration="3428000" />
       <workItem from="1624391497874" duration="2111000" />
       <workItem from="1624407308393" duration="19935000" />
+      <workItem from="1624493133509" duration="10723000" />
     </task>
     <servers />
   </component>

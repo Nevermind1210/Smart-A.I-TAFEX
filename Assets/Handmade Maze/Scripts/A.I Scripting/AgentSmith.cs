@@ -10,13 +10,15 @@ namespace AI
     public class AgentSmith : MonoBehaviour
     {
         private NavMeshAgent agent;
-        private Waypoint[] waypoints;
+        private List<Waypoint> waypoints;
         private NavMeshLink jumpLink;
         private Animator _anim;
 
         //Will give us a random waypoint in the array as a variable
-        private Waypoint RandomPoint => waypoints[Random.Range(0, waypoints.Length)];
+        private Waypoint RandomPoint => waypoints[Random.Range(0, waypoints.Count)];
 
+        public void RemoveWaypoint(Waypoint _waypoint) => waypoints.Remove(_waypoint);
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -24,7 +26,7 @@ namespace AI
             jumpLink = gameObject.GetComponent<NavMeshLink>();
             agent = gameObject.GetComponent<NavMeshAgent>();
             // FindObjectsOfType gets every instance of this component in the scene
-            waypoints = FindObjectsOfType<Waypoint>();
+            waypoints = new List<Waypoint>(FindObjectsOfType<Waypoint>());
         }
 
         // Update is called once per frame
@@ -74,12 +76,6 @@ namespace AI
             }
         }
         
-        private void OnTriggerEnter(Collider collided)
-        {
-            if (collided.gameObject.tag == "Hero")
-            {
-                Destroy(gameObject);
-            }
-        }
+        
     }
 }

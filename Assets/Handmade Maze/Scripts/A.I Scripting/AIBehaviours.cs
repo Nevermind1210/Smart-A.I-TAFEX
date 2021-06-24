@@ -41,8 +41,8 @@ namespace AI
             // This is the same as checking if the variable is null, then setting it, otherwise retain the value.
             states.Add(States.Chase, Chase);
             states.Add(States.Wander, Wander);
-            states.Add(States.Collecting, Collecting);
-            states.Add(States.Finish, Finshing);
+            /*states.Add(States.Collecting, Collecting);
+            states.Add(States.Finish, Finshing);*/
             
             chaser.Start(gameObject);
             wanderer.Start(gameObject);
@@ -62,9 +62,5 @@ namespace AI
         private void Chase() => chaser.Update();
         // The function that will run when we are in the scale state.
         private void Wander() => wanderer.Update();
-        
-        private void Collecting() => 
-        
-        private void Finshing() => 
     }
 }
