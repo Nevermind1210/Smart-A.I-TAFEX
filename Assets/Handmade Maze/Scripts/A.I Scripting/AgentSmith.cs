@@ -10,14 +10,17 @@ namespace AI
     public class AgentSmith : MonoBehaviour
     {
         private NavMeshAgent agent;
-        private List<Waypoint> waypoints;
+        private List<WaypointKeys> waypointsKey;
+        private List<WaypointEnds> waypointEnds;
         private NavMeshLink jumpLink;
         private Animator _anim;
 
         //Will give us a random waypoint in the array as a variable
-        private Waypoint RandomPoint => waypoints[Random.Range(0, waypoints.Count)];
+        private WaypointKeys RandomPoint => waypointsKey[Random.Range(0, waypointsKey.Count)];
+        private WaypointEnds endPoints => waypointEnds[Random.Range(0, waypointEnds.Count)];
 
-        public void RemoveWaypoint(Waypoint _waypoint) => waypoints.Remove(_waypoint);
+        public void RemoveWaypoint(WaypointKeys _waypointKeys) => waypointsKey.Remove(_waypointKeys);
+        public void RemoveWaypointEnd(WaypointEnds _waypointEnds) => waypointEnds.Remove(_waypointEnds);
         
         // Start is called before the first frame update
         void Start()
@@ -26,39 +29,54 @@ namespace AI
             jumpLink = gameObject.GetComponent<NavMeshLink>();
             agent = gameObject.GetComponent<NavMeshAgent>();
             // FindObjectsOfType gets every instance of this component in the scene
-            waypoints = new List<Waypoint>(FindObjectsOfType<Waypoint>());
+            waypointsKey = new List<WaypointKeys>(FindObjectsOfType<WaypointKeys>());
+            waypointEnds = new List<WaypointEnds>(FindObjectsOfType<WaypointEnds>());
         }
 
         // Update is called once per frame
         void Update()
         {
+            KeyWaypointsPath();
+        }
+
+        private void KeyWaypointsPath()
+        {
             // Has the agent reached it's position?
             if (!agent.pathPending && agent.remainingDistance < 0.1f)
             {
-               
                 if (!agent.hasPath) // Tell the agent if the path is not reachable then find another waypoint that HAS a path
                 {
                     agent.SetDestination(RandomPoint.Position);
                 }
                 _anim.SetTrigger("Walk");
             }
-            else if(waypoints == null)
+            else
             {
-                _anim.SetTrigger("Idle");
+                EndingWaypointsPath();
             }
-            
             if (agent.isPathStale)
             {
                 agent.SetDestination(RandomPoint.Position);
             }
-                
-            if (agent.isOnOffMeshLink)
+        }
+
+        private void EndingWaypointsPath()
+        {
+            if (!agent.pathPending && agent.remainingDistance < 0.1f)
             {
-                if (!_anim.GetCurrentAnimatorStateInfo(0).IsName("Jumpin"))
+                if (!agent.hasPath) // Tell the agent if the path is not reachable then find another waypoint that HAS a path
                 {
-                    _anim.SetTrigger("Jump");
+                    agent.SetDestination(endPoints.Position);
                 }
-                
+                _anim.SetTrigger("Walk");
+            }
+            else if(endPoints == null)
+            {
+                _anim.SetTrigger("Idle");
+            }
+            if (agent.isPathStale)
+            {
+                agent.SetDestination(endPoints.Position);
             }
         }
         

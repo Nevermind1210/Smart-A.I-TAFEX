@@ -11,10 +11,6 @@ namespace Objectives
         {
             if (GameVariables.keyItems == 4)
             {
-                foreach (var child in keyWaypointSet.transform)
-                { 
-                   // GetComponent<AgentSmith>().RemoveWaypoint(child);
-                }
                 keyWaypointSet.SetActive(false);
                 endingWaypointSet.SetActive(true);
             }
