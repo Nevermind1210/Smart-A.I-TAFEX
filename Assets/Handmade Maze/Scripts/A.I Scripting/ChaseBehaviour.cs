@@ -5,7 +5,7 @@ using UnityEngine.AI;
 namespace AI
 {
     [System.Serializable]
-    public class ChaseBehaviour
+    public class ChaseBehaviour : MonoBehaviour
     {
         private AIBehaviours state;
         private FieldOfVision fieldOfVision;
@@ -14,12 +14,12 @@ namespace AI
         private float moveSpeed = 3f; 
         private NavMeshAgent agent;
         
-        public void Start(GameObject _object)
+        public void Start()
         {
-            itself = _object.transform;
-            agent = _object.GetComponent<NavMeshAgent>();
-            fieldOfVision = _object.GetComponent<FieldOfVision>();
-            state = _object.GetComponent<AIBehaviours>();
+            itself = transform;
+            agent = GetComponent<NavMeshAgent>();
+            fieldOfVision = GetComponent<FieldOfVision>();
+            state = GetComponent<AIBehaviours>();
         }
 
         /*public void Update()

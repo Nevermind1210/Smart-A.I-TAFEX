@@ -15,6 +15,7 @@ namespace UIElements
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                isPaused = true;
                 if (isPaused)
                 {
                     Resume();
@@ -45,6 +46,11 @@ namespace UIElements
         public void LoadMenu() // though this is gonna cause a bug, why cause it will null everything on the next time you load the scene
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
+        public void RestartScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void QuitGame()

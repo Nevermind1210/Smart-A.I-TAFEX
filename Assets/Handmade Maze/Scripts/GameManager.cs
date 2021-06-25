@@ -10,7 +10,7 @@ namespace Controller
         public GameObject collectibleCount;
         public bool endGame;
         public bool speedGame;
-        [SerializeField] public float speedyBoi;
+        [SerializeField] public float speedyBoi = 3f;
         private ObjectiveEnablerDisabler ObjectiveObject;
         [SerializeField] private AIBehaviours stateBehaviours;
         private void Start()
@@ -19,9 +19,6 @@ namespace Controller
             if (endGame)
             {
                 stateBehaviours.keyIndex = 4;
-                
-                ObjectiveObject.endingWaypointSet.SetActive(true);
-                ObjectiveObject.keyWaypointSet.SetActive(false);
             }
         }
 

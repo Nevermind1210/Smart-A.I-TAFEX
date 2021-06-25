@@ -6,8 +6,9 @@ namespace AI
 {
    public enum States
     {
-        Collecting,
-        Finishing,
+        MainPathing,
+        FindingKeys,
+        FindingPressurePlates,
     }
 
     // The delegate that dictates what the functions for each state will look like.
@@ -18,17 +19,21 @@ namespace AI
     {
         private Dictionary<States, StateDelegate> states = new Dictionary<States, StateDelegate>();
 
-        [SerializeField] public States currentState = States.Collecting;
+        [SerializeField] public States currentState = States.MainPathing;
 
         public NavMeshAgent agent;
 
         [Header("Waypoints")] 
-        public WaypointEnds[] endWaypoints;
-        public WaypointKeys[] keyWaypoints;
+        public Waypoints[] waypoints;
+        public List<WaypointEnds> endWaypoints;
+        public WaypointKeys[] waypointKeys;
         [Header("Waypoint Indexes")] 
-        public int keyIndex = 1;
-        public int endIndex = 0;
+        public int keyIndex = 0;
+        public int waypointIndex = 1;
+        public int pressurePlateIndex = 0;
 
+        //public void RemoveWaypoint(WaypointKeys _waypointKeys) => keyWaypoints.Remove(_waypointKeys);
+        
         // This is used to change the state from anywhere within the code that has reference to the state machine.
         public void ChangeState(States _newState)
         {
@@ -42,10 +47,11 @@ namespace AI
         {
             agent = _agent;
 
-            states.Add(States.Collecting, Collecting);
-            states.Add(States.Finishing, Finishing);
+            states.Add(States.MainPathing, MainPathing);
+            states.Add(States.FindingKeys, FindingKeys);
+            states.Add(States.FindingPressurePlates, FindingPressurePlate);
 
-            keyIndex = Mathf.Clamp(endIndex, 0, 4);
+            keyIndex = Mathf.Clamp(keyIndex, 0, 5);
         }
 
         // Update is called once per frame
@@ -59,31 +65,68 @@ namespace AI
                 Debug.LogError($"No state function set for state {currentState}.");
         }
 
-        // The function that will run when we are in the Collecting state.
-        private void Collecting()
+        // The function that will run when we are in the MainPathing state.
+        private void MainPathing() 
         {
-            if (keyIndex <= 4)
+            if (keyIndex <= 3) // this will always run 
             {
-                WaypointKeys keyCurrentWaypoint = keyWaypoints[keyIndex - 1];
-                
-                agent.SetDestination(keyCurrentWaypoint.transform.position);
+                ChangeState(States.FindingKeys);
             }
-            else if (keyIndex == 4)
+            else if (pressurePlateIndex <= 2) // then drop down and run until thats max value
             {
-                SmartHeroAI.collectiablesFound = true;
-                ChangeState(States.Finishing);
+               ChangeState(States.FindingPressurePlates);
+            }
+            else if(waypointIndex <= 1) // and then we finish this!
+            {
+                Waypoints _waypoints = waypoints[waypointIndex - 1];
+                agent.SetDestination(_waypoints.transform.position);
             }
         }
-
-        // The function that will run when we are in the Finishing state.
-        private void Finishing()
+        
+        // Function runs when state is Switched to FindingKeys
+        private void FindingKeys()
         {
-            WaypointEnds endCurrentWaypoint = endWaypoints[endIndex];
-            agent.SetDestination(endCurrentWaypoint.transform.position);
-
-            if(!agent.pathPending && agent.remainingDistance < 0.01f)
+            if (keyIndex <= 3)
             {
-                endCurrentWaypoint.gameObject.SetActive(false);
+                WaypointKeys _waypointKeys = waypointKeys[keyIndex]; // getting the index of that and then 
+                agent.SetDestination(_waypointKeys.transform.position);
+
+                if (!agent.pathPending && agent.remainingDistance < 0.01f)
+                {
+                    keyIndex += 1;
+                    ChangeState(States.FindingKeys);
+
+                    _waypointKeys.gameObject.SetActive(false);
+                }
+            }
+            // Once all keys are found
+            else
+            {
+                SmartHeroAI.collectiblesFound = true;
+                ChangeState(States.FindingPressurePlates);
+            }
+        }
+        
+        private void FindingPressurePlate()
+        {
+            Debug.Log("Finding Next Pressure Plate");
+            if (pressurePlateIndex <= 2)
+            {
+                WaypointEnds _waypointEnds = endWaypoints[pressurePlateIndex];
+                agent.SetDestination(_waypointEnds.transform.position);
+
+                if (!agent.pathPending && agent.remainingDistance < 0.01f)
+                {
+                    pressurePlateIndex += 1;
+                    ChangeState(States.FindingKeys);
+
+                    _waypointEnds.gameObject.SetActive(false);
+                }
+            }
+            // Once all Plates are found
+            else
+            {
+                ChangeState(States.MainPathing);
             }
         }
     }

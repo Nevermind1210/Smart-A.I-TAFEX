@@ -17,13 +17,5 @@ namespace AI
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, 0.1f);
         }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "Hero")
-            { 
-                other.GetComponent<AgentSmith>().RemoveWaypoint(this);
-            }
-        }
     }
 }

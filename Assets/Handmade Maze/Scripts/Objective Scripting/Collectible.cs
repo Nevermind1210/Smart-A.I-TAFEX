@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AI;
 using UnityEngine;
 
 namespace Objectives
@@ -12,7 +13,8 @@ namespace Objectives
          if (collider.gameObject.tag == "Hero")
          {
             GameVariables.keyItems += 1;
-            Destroy(gameObject);
+            //collider.GetComponent<SmartHeroAI>().RemoveWaypoint(gameObject.GetComponentInParent<WaypointKeys>());
+            //Destroy(gameObject);
          }
       }
    }

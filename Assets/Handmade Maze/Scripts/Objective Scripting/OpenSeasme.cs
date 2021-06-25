@@ -8,14 +8,17 @@ namespace Door
 {
     public class OpenSeasme : MonoBehaviour
     {
+        [Header("Door to open!")]
         [SerializeField] Door door;
         private void OnTriggerEnter(Collider collider)
         {
-            if (collider.gameObject.tag == "Hero" && GameVariables.keyItems > 0)
-            {
-                GameVariables.keyItems--;
-                door.open = true;
-            }
+            StartCoroutine(OpenDoor());
+        }
+
+        private IEnumerator OpenDoor()
+        {
+            door.open = true;
+            yield return new WaitForFixedUpdate();
         }
     }
 }
